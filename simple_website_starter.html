@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Rentals</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-pink-600 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Prime Party Rentals</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#items" class="hover:underline">Rentals</a>
+        <a href="#contact" class="hover:underline">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="bg-pink-100 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Make Your Event Memorable</h2>
+    <p class="text-lg mb-6">Tables, chairs, and audio equipment for all your party needs.</p>
+    <a href="#contact" class="bg-pink-600 text-white px-6 py-3 rounded-lg shadow">Book Now</a>
+  </section>
+
+  <!-- Rental Items -->
+  <section id="items" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Rental Options</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Tables</h3>
+        <p>Round tables, banquet tables, cocktail tables for all event sizes.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Chairs</h3>
+        <p>Folding chairs, chiavari chairs, and premium seating options.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Audio Equipment</h3>
+        <p>Speakers, microphones, DJ systems, and sound setups.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="contact" class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Book Your Rentals</h2>
+    <form action="https://formsubmit.co/roundrockseller1@gmail.com" method="POST" class="grid gap-4 bg-white p-6 rounded-2xl shadow">
+      <input type="hidden" name="_subject" value="New Party Rental Booking Request">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Full Name" class="p-3 border rounded-lg" required>
+      <input type="email" name="email" placeholder="Email Address" class="p-3 border rounded-lg" required>
+      <input type="tel" name="phone" placeholder="Phone Number" class="p-3 border rounded-lg" required>
+
+      <div class="grid md:grid-cols-3 gap-4">
+        <input type="number" name="tables" placeholder="Number of Tables" class="p-3 border rounded-lg">
+        <input type="number" name="chairs" placeholder="Number of Chairs" class="p-3 border rounded-lg">
+        <input type="text" name="audio" placeholder="Audio Equipment Needed" class="p-3 border rounded-lg">
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <input type="date" name="date" class="p-3 border rounded-lg" required>
+        <input type="date" name="date" class="p-3 border rounded-lg" required>
+      </div>
+
+      <textarea name="details" placeholder="Event Details (location, setup needs, etc.)" class="p-3 border rounded-lg" rows="4"></textarea>
+
+      <button class="bg-pink-600 text-white py-3 rounded-lg">Submit Booking Request</button>
+
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-600 text-white text-center py-6">
+    <p>© 2026 Round Rock Rentals. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
